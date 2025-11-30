@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 public class Main
 {
     static void main()
@@ -8,14 +9,13 @@ public class Main
 
         Scanner  scan = new Scanner(sc.nextLine());
         sc.close();
-        String word, word2="";
+     ArrayList<String> words= new ArrayList<>();
 
         while(scan.hasNext())
         {
-              word=scan.next();
-           if(scan.hasNext())    word2=word;
+            words.add(scan.next());
        }
-        System.out.println(word2);
+        System.out.println(words.get(words.size()-2));
     }
 
 }
